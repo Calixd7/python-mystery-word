@@ -2,7 +2,7 @@ import random
 import string
 file = open ('words.txt')
 text = file.read().split()
-
+file.close()
 easy_list = [ word.upper() for word in text if 4 <= len(word) <= 6 ]
 normal_list = [ word.upper() for word in text if 6 <= len(word) <= 8]  
 hard_list = [ word.upper()for word in text if 8 <= len(word)   ]
